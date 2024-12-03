@@ -1,0 +1,92 @@
+.hidden {
+    display: none;
+    translate: (0px, -1500px);
+    translate: none;
+    scale: none;
+    z-index: -1;
+  }
+  
+  /* Loading Screen */
+  #loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); 
+    color: #1a1a2e;
+    z-index: 1000;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+  #main-content.hidden {
+    visibility: hidden;
+  }
+  
+  .slide-up {
+    transform: translateY(-100%); /* Moves it out of view upwards */
+    opacity: 0; /* Fades out during the transition */
+  }
+  
+  
+  
+  .loading-dots {
+    display: flex;
+    gap: 10px; /* Spacing between dots */
+  }
+  
+  .loading-dots span {
+    display: inline-block;
+    font-size: 2.5rem; /* Dot size */
+    animation: blink 1.5s infinite ease-in-out; /* Smooth blinking animation */
+  }
+  
+  .loading-dots span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .loading-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loading-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  /* Keyframes for blinking effect */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0.2; /* Fade out */
+    }
+    50% {
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  .loader {
+    border: 8px solid #2e2e4a; /* Dark border for spinner */
+    border-radius: 50%;
+    border-top: 8px solid #8f94fb; /* Vibrant spinner color */
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+  
+  
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

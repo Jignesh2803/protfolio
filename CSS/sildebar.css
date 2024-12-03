@@ -1,0 +1,339 @@
+.branding {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    text-align: center;
+    background: linear-gradient(135deg, #232343, #393960);
+    color: #8f94fb; /* Vibrant text */
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #393960; /* Subtle separator */
+    z-index: 100;
+  }
+  
+  /* Main Section */
+  .main-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .sidebar {
+    position: fixed; /* Make the sidebar sticky */
+    top: 80px;
+    left: 0px;
+    background: linear-gradient(135deg, #232343, #393960); /* Sidebar gradient */
+    width: 200px;
+    height: calc(100vh - 80px); /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px, 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+    transition: transform 0.3s ease, background 0.3s ease;
+    /*display: block;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 15px; */
+  }
+  
+  
+  .sidebar ul li a{
+    color: #eaeaea; /* Light text color */
+    text-decoration: none;
+    border-radius: 0%;
+    padding: 15px 10px;
+    /* border: 1px solid black; */
+    /* width: 30px; */
+    display: block;
+    transition: background 0.3s;
+  }
+  
+  
+  
+  .sidebar ul li a {
+    border-radius: 0%;
+    transition: transform 0.5s ;
+    text-align: center;
+  }
+  
+  
+  
+  .sidebar ul li a:hover {
+    background: #4e54c8; /* Vibrant hover effect */
+    color: #fff;
+    /* transform: scale(1.1); */
+  }
+  
+  .sidebar ul li a {
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .menu-item {
+    /* font-size: 2rem; */
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+  }
+  
+  .menu-item span {
+    display: inline-block;
+    transition: transform 0.6s ease-in-out; /* Smooth individual animation */
+  }
+  
+
+  #home-link:hover span {
+    transform: rotateX(360deg); /* Rotate on X-axis for a 3D lock effect */
+  }
+  
+#home-link span:nth-child(1) {
+    transition-delay: 0s;
+  }
+  
+#home-link span:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  
+#home-link span:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  
+#home-link span:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+
+
+
+  #about-link:hover span{
+    transform: rotateX(360deg);
+  }
+
+  #about-link span:nth-child(1) {
+    transition-delay: 0s;
+  }
+  
+#about-link span:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  
+#about-link span:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  
+#about-link span:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+
+#about-link span:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+
+
+#education-link:hover span{
+    transform: rotateX(360deg);
+}
+
+#education-link span:nth-child(1) {
+    transition-delay: 0.0s;
+  }
+
+  #education-link span:nth-child(2) {
+    transition-delay: 0.06s;
+  }
+
+  #education-link span:nth-child(3) {
+    transition-delay: 0.12s;
+  }
+
+  #education-link span:nth-child(4) {
+    transition-delay: 0.18s;
+  }
+
+  #education-link span:nth-child(5) {
+    transition-delay: 0.24s;
+  }
+
+  #education-link span:nth-child(6) {
+    transition-delay: 0.30s;
+  }
+
+  #education-link span:nth-child(7) {
+    transition-delay: 0.36s;
+  }
+
+  #education-link span:nth-child(8) {
+    transition-delay: 0.42s;
+  }
+
+  #education-link span:nth-child(9) {
+    transition-delay: 0.48s;
+  }
+
+
+
+
+  #skills-link:hover span{
+    transform: rotateX(360deg);
+  }
+
+  #skills-link span:nth-child(1) {
+    transition-delay: 0.0s;
+  }
+
+  #skills-link span:nth-child(2) {
+    transition-delay: 0.06s;
+  }
+
+  #skills-link span:nth-child(3) {
+    transition-delay: 0.12s;
+  }
+
+  #skills-link span:nth-child(4) {
+    transition-delay: 0.18s;
+  }
+
+  #skills-link span:nth-child(5) {
+    transition-delay: 0.24s;
+  }
+
+  #skills-link span:nth-child(6) {
+    transition-delay: 0.30s;
+  }
+
+  #skills-link span:nth-child(7) {
+    transition-delay: 0.36s;
+  }
+
+
+  #internship-link:hover span{
+    transform: rotateX(360deg);
+  }
+
+  #internship-link span:nth-child(1) {
+    transition-delay: 0.0s;
+  }
+
+  #internship-link span:nth-child(2) {
+    transition-delay: 0.06s;
+  }
+
+  #internship-link span:nth-child(3) {
+    transition-delay: 0.12s;
+  }
+
+  #internship-link span:nth-child(4) {
+    transition-delay: 0.18s;
+  }
+
+  #internship-link span:nth-child(5) {
+    transition-delay: 0.24s;
+  }
+
+  #internship-link span:nth-child(6) {
+    transition-delay: 0.30s;
+  }
+
+  #internship-link span:nth-child(7) {
+    transition-delay: 0.36s;
+  }
+
+  #internship-link span:nth-child(8) {
+    transition-delay: 0.42s;
+  }
+
+  #internship-link span:nth-child(9) {
+    transition-delay: 0.48s;
+  }
+
+  #internship-link span:nth-child(10) {
+    transition-delay: 0.54s;
+  }
+
+
+  #project-link:hover span{
+    transform: rotateX(360deg);
+ }
+
+  #project-link span:nth-child(1) {
+    transition-delay: 0.0s;
+  }
+
+  #project-link span:nth-child(2) {
+    transition-delay: 0.06s;
+  }
+
+  #project-link span:nth-child(3) {
+    transition-delay: 0.12s;
+  }
+
+  #project-link span:nth-child(4) {
+    transition-delay: 0.18s;
+  }
+
+  #project-link span:nth-child(5) {
+    transition-delay: 0.24s;
+  }
+
+  #project-link span:nth-child(6) {
+    transition-delay: 0.30s;
+  }
+
+  #project-link span:nth-child(7) {
+    transition-delay: 0.36s;
+  }
+
+  #project-link span:nth-child(8) {
+    transition-delay: 0.42s;
+  }
+
+
+  #contact-link:hover span{
+    transform: rotateX(360deg);
+}
+
+#contact-link span:nth-child(1) {
+    transition-delay: 0.0s;
+  }
+
+  #contact-link span:nth-child(2) {
+    transition-delay: 0.06s;
+  }
+
+  #contact-link span:nth-child(3) {
+    transition-delay: 0.12s;
+  }
+
+  #contact-link span:nth-child(4) {
+    transition-delay: 0.18s;
+  }
+
+  #contact-link span:nth-child(5) {
+    transition-delay: 0.24s;
+  }
+
+  #contact-link span:nth-child(6) {
+    transition-delay: 0.30s;
+  }
+
+  #contact-link span:nth-child(7) {
+    transition-delay: 0.36s;
+  }
+
