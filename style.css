@@ -149,7 +149,7 @@ body {
     border: 6px solid #8f94fb; /* Vibrant border */
     box-shadow: 0 8px 16px rgba(143, 148, 251, 0.6); /* Colored shadow */
     animation: moveUpDown 3s ease-in-out infinite; /* Apply animation */
-    background-image: url(../Assets/banner_shape.png);
+    background-image: url(./banner_shape.png);
     background-attachment: fixed;
   }
   
@@ -383,7 +383,7 @@ body {
     margin-right: 50px;
     border-radius: 20px;
     height: 80vh;
-    background-image: url(../Assets/bank.jpg);
+    background-image: url(./bank.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     animation: moveUpDown 3s ease-in-out infinite;
