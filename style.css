@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
     line-height: 1.6;
     background: #1a1a2e; 
     color: #eaeaea; /* Light text color for readability */
@@ -41,6 +42,7 @@ body {
     background: #232343; /* Dark background */
     color: #eaeaea; /* Light text color */
     padding: 0px;
+    height: 100vh;
   }
   
   .content h1 {
